@@ -10,12 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var weatherService = WeatherService()
     var weatherArray:[[String]] = []
-
+    //var weatherViewModel:
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.weatherService.downloadData(withURL: URL_CONSTANTS.BASE_URL) { (weatherArray, error) in
+       // self.weatherService.downloadData(withURL: URL_CONSTANTS.BASE_URL) { (weatherArray, error) in
             
         
         }

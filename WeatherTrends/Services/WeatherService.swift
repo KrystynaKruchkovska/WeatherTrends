@@ -39,6 +39,8 @@ class WeatherService{
                     
                     do {
                         let parsedTextData = try Parser.parse(textData: texttData)
+                        // here we don't want do parsing, it should be moved to
+                        // WeatherViewModel and this handler's arguments should be just (string?, error?)
                         
                         DispatchQueue.main.async {
                             completion(parsedTextData,nil)

@@ -9,8 +9,6 @@
 import Foundation
 
 class Parser {
-    static let instance = Parser()
-    private init() {}
     
     class func parse(textData: String) throws -> [[String]] {
         // Splitting raw string in to array by "\r\n"
@@ -31,4 +29,5 @@ class Parser {
         print(clearMonthlyDataArrays)
         return clearMonthlyDataArrays
     }
+    
 }
